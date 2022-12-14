@@ -10,7 +10,11 @@ const Posts = () => {
     }, [])
 
     return (
-        <div>
+        <div style={{
+            maxHeight: '370px',
+            overflow: 'scroll',
+            overflowX: 'hidden'
+        }}>
             {
                 posts && posts.map((post) => <Post key={post.id} post={post}/>)
             }

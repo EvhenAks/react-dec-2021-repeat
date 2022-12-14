@@ -1,8 +1,9 @@
+import './user.css'
 import React from 'react';
 
 const User = ({user}) => {
     return (
-        <div>
+        <div className={'red'}>
             <span>{user.name}</span>
             <span>{user.username}</span>
             <span>{user.email}</span>
